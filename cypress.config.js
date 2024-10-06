@@ -7,4 +7,11 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/integration/trello.spec.js"
   },
+  reporter: "mochawesome",
+  reporterOptions: {
+    reportDir: "trello\mochawesome-report", 
+    overwrite: false,                   
+    html: true,                         
+    json: true                          
+  }
 });
